@@ -1,5 +1,6 @@
 package Practise_Package;
 
+import org.testng.annotations.Test;
 import com.microsoft.playwright.APIRequest;
 import com.microsoft.playwright.APIRequestContext;
 import com.microsoft.playwright.APIResponse;
@@ -12,7 +13,6 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.testng.annotations.Test;
 
 
 public class APIResponseCode
