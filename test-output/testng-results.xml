@@ -1,37 +1,262 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-23T13:23:49 IST" name="Suite" finished-at="2025-04-23T13:23:58 IST" duration-ms="8536">
+  <suite started-at="2025-04-27T09:30:06 IST" name="Suite" finished-at="2025-04-27T09:30:07 IST" duration-ms="135">
     <groups>
     </groups>
-    <test started-at="2025-04-23T13:23:49 IST" name="Test" finished-at="2025-04-23T13:23:58 IST" duration-ms="8536">
+    <test started-at="2025-04-27T09:30:06 IST" name="Test" finished-at="2025-04-27T09:30:07 IST" duration-ms="135">
       <class name="Demo.BookStore.Demo_BookStore">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.BookStore.Demo_BookStore@74f0ea28]" started-at="2025-04-23T13:23:37 IST" name="setup" finished-at="2025-04-23T13:23:49 IST" duration-ms="12469" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.BookStore.Demo_BookStore@74f0ea28]" started-at="2025-04-27T09:29:49 IST" name="setup" finished-at="2025-04-27T09:30:06 IST" duration-ms="17871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:Demo.BookStore.Demo_BookStore@74f0ea28]" started-at="2025-04-23T13:23:50 IST" name="setupPage" finished-at="2025-04-23T13:23:56 IST" duration-ms="6144" status="PASS">
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:Demo.BookStore.Demo_BookStore@74f0ea28]" started-at="2025-04-27T09:30:07 IST" name="setupPage" finished-at="2025-04-27T09:30:07 IST" duration-ms="8" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Playwright connection closed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Playwright connection closed
+at com.microsoft.playwright.impl.PipeTransport.send(PipeTransport.java:50)
+at com.microsoft.playwright.impl.Connection.internalSendMessage(Connection.java:168)
+at com.microsoft.playwright.impl.Connection.sendMessageAsync(Connection.java:134)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
+at com.microsoft.playwright.impl.PageImpl.lambda$navigate$47(PageImpl.java:943)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:943)
+at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
+at com.microsoft.playwright.Page.navigate(Page.java:5491)
+at TestCases.BaseClass.setupPage(BaseClass.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPage -->
-        <test-method signature="TestCase_CheckUserName()[pri:0, instance:Demo.BookStore.Demo_BookStore@74f0ea28]" started-at="2025-04-23T13:23:56 IST" name="TestCase_CheckUserName" finished-at="2025-04-23T13:23:58 IST" duration-ms="1935" status="PASS">
+        <test-method signature="TestCase_CheckUserName()[pri:0, instance:Demo.BookStore.Demo_BookStore@74f0ea28]" started-at="2025-04-27T09:30:07 IST" name="TestCase_CheckUserName" finished-at="2025-04-27T09:30:07 IST" duration-ms="0" status="SKIP">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Playwright connection closed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Playwright connection closed
+at com.microsoft.playwright.impl.PipeTransport.send(PipeTransport.java:50)
+at com.microsoft.playwright.impl.Connection.internalSendMessage(Connection.java:168)
+at com.microsoft.playwright.impl.Connection.sendMessageAsync(Connection.java:134)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
+at com.microsoft.playwright.impl.PageImpl.lambda$navigate$47(PageImpl.java:943)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:943)
+at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
+at com.microsoft.playwright.Page.navigate(Page.java:5491)
+at TestCases.BaseClass.setupPage(BaseClass.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase_CheckUserName -->
-        <test-method signature="TestCase_ChecklogOutbtn()[pri:0, instance:Demo.BookStore.Demo_BookStore@74f0ea28]" started-at="2025-04-23T13:23:58 IST" name="TestCase_ChecklogOutbtn" finished-at="2025-04-23T13:23:58 IST" duration-ms="47" status="PASS">
+        <test-method signature="TestCase_ChecklogOutbtn()[pri:0, instance:Demo.BookStore.Demo_BookStore@74f0ea28]" started-at="2025-04-27T09:30:07 IST" name="TestCase_ChecklogOutbtn" finished-at="2025-04-27T09:30:07 IST" duration-ms="0" status="SKIP">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Playwright connection closed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Playwright connection closed
+at com.microsoft.playwright.impl.PipeTransport.send(PipeTransport.java:50)
+at com.microsoft.playwright.impl.Connection.internalSendMessage(Connection.java:168)
+at com.microsoft.playwright.impl.Connection.sendMessageAsync(Connection.java:134)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
+at com.microsoft.playwright.impl.PageImpl.lambda$navigate$47(PageImpl.java:943)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:943)
+at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
+at com.microsoft.playwright.Page.navigate(Page.java:5491)
+at TestCases.BaseClass.setupPage(BaseClass.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase_ChecklogOutbtn -->
-        <test-method signature="TestCase_SearchBookbyKeyWords()[pri:0, instance:Demo.BookStore.Demo_BookStore@74f0ea28]" started-at="2025-04-23T13:23:58 IST" name="TestCase_SearchBookbyKeyWords" finished-at="2025-04-23T13:23:58 IST" duration-ms="271" status="PASS">
+        <test-method signature="TestCase_SearchBookbyKeyWords()[pri:0, instance:Demo.BookStore.Demo_BookStore@74f0ea28]" started-at="2025-04-27T09:30:07 IST" name="TestCase_SearchBookbyKeyWords" finished-at="2025-04-27T09:30:07 IST" duration-ms="0" status="SKIP">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Playwright connection closed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Playwright connection closed
+at com.microsoft.playwright.impl.PipeTransport.send(PipeTransport.java:50)
+at com.microsoft.playwright.impl.Connection.internalSendMessage(Connection.java:168)
+at com.microsoft.playwright.impl.Connection.sendMessageAsync(Connection.java:134)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
+at com.microsoft.playwright.impl.PageImpl.lambda$navigate$47(PageImpl.java:943)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:943)
+at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
+at com.microsoft.playwright.Page.navigate(Page.java:5491)
+at TestCases.BaseClass.setupPage(BaseClass.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase_SearchBookbyKeyWords -->
-        <test-method is-config="true" signature="closePage()[pri:0, instance:Demo.BookStore.Demo_BookStore@74f0ea28]" started-at="2025-04-23T13:23:58 IST" name="closePage" finished-at="2025-04-23T13:23:58 IST" duration-ms="49" status="PASS">
+        <test-method is-config="true" signature="closePage()[pri:0, instance:Demo.BookStore.Demo_BookStore@74f0ea28]" started-at="2025-04-27T09:30:07 IST" name="closePage" finished-at="2025-04-27T09:30:07 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePage -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:Demo.BookStore.Demo_BookStore@74f0ea28]" started-at="2025-04-23T13:23:58 IST" name="TearDown" finished-at="2025-04-23T13:23:58 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Demo.BookStore.Demo_BookStore@74f0ea28]" started-at="2025-04-27T09:30:07 IST" name="TearDown" finished-at="2025-04-27T09:30:07 IST" duration-ms="8" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Playwright connection closed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Playwright connection closed
+at com.microsoft.playwright.impl.PipeTransport.send(PipeTransport.java:50)
+at com.microsoft.playwright.impl.Connection.internalSendMessage(Connection.java:168)
+at com.microsoft.playwright.impl.Connection.sendMessageAsync(Connection.java:134)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:113)
+at com.microsoft.playwright.impl.BrowserImpl.closeImpl(BrowserImpl.java:89)
+at com.microsoft.playwright.impl.BrowserImpl.lambda$close$0(BrowserImpl.java:72)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.BrowserImpl.close(BrowserImpl.java:72)
+at com.microsoft.playwright.Browser.close(Browser.java:1268)
+at TestCases.BaseClass.TearDown(BaseClass.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
